@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>综测小助手表单页</title>
+</head>
+<body>
+
+<p>
+<h3>输入</h3></p>
+<form action="/score" method="post">
+    <p>行业资格成绩：
+        <select name="score1">
+            <option value="优秀">优秀</option>
+            <option value="良好">良好</option>
+            <option value="中等">中等</option>
+            <option value="及格">及格</option>
+            <option value="不及格">不及格</option>
+        </select>
+    </p>
+    <p>综合训练成绩：
+        <select name="score2">
+            <option value="优秀">优秀</option>
+            <option value="良好">良好</option>
+            <option value="中等">中等</option>
+            <option value="及格">及格</option>
+            <option value="不及格">不及格</option>
+        </select>
+    </p>
+    <p>软工训练成绩：
+        <select name="score3">
+            <option value="优秀">优秀</option>
+            <option value="良好">良好</option>
+            <option value="中等">中等</option>
+            <option value="及格">及格</option>
+            <option value="不及格">不及格</option>
+        </select>
+    </p>
+    <p>
+        体侧成绩：<input name="score4" onkeyup="value=value.replace(/[^1234567890.]+/g,'')">
+    <p>
+        <button type="submit">计算</button>
+    </p>
+</form>
+<p>
+</body>
+</html>
+
